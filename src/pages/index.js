@@ -58,6 +58,13 @@ const SectionBridge = styled.p`
     font-weight:500;
     margin: 0;
     line-height: 48px;
+    opacity: 0;
+   animation: ${MainTextAnimation};
+  animation-duration: 3s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+
 
     @media (max-width: 860px) {
       font-size: 28px;
@@ -77,7 +84,7 @@ const SectionTitle = styled.p`
     font-weight:500;
     margin-bottom:30px;
     line-height: 48px;
-
+    opacity: 0;
    animation: ${MainTextAnimation};
   animation-duration: 3s;
   animation-delay: 0.1s;

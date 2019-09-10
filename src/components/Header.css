@@ -1,8 +1,11 @@
 .Header {
-    position: fixed;
-    padding: 25px;
     z-index: 100;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, auto);
   }
+  .site-title{
+    margin: 0;
+    background-color: black;
+  }
+  
