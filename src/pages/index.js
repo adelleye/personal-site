@@ -2,9 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+
 import SEO from "../components/seo"
-import styled from "styled-components"
+import styled , { keyframes }from "styled-components"
 
 const IndexPage = props => (
   <Layout>
@@ -19,7 +19,16 @@ const IndexPage = props => (
 
   </Layout>
 )
-
+const MainTextAnimation = keyframes`
+   0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+`
 const SectionDiv = styled.div`
 max-width: 860px;
 height: 500px;
@@ -69,6 +78,12 @@ const SectionTitle = styled.p`
     margin-bottom:30px;
     line-height: 48px;
 
+   animation: ${MainTextAnimation};
+  animation-duration: 3s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+
     @media (max-width: 860px) {
       font-size: 28px;
         line-height: 34px;
@@ -80,5 +95,8 @@ const SectionTitle = styled.p`
         line-height: 28px;
     }
 `
+
+
+;
 export default IndexPage
 
