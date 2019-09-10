@@ -62,12 +62,18 @@ const SectionBridge = styled.p`
     }
 `
 
-const SectionTitle = styled.h3`
+const SectionTitle = styled.p`
     color: rgba(41,42,44,1.0);
     font-size: 40px;
     font-weight:500;
-    margin: 0;
+    margin-bottom:30px;
     line-height: 48px;
+
+    @media (max-width: 860px) {
+      font-size: 28px;
+        line-height: 34px;
+
+    }
  
     @media (max-width: 640px) {
         font-size: 22px;
