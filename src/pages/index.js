@@ -12,7 +12,7 @@ const IndexPage = props => (
     
     
     <SectionTitle>My name is Tobi, a Toronto based web and user interface designer. </SectionTitle>
-    <p>I'm currently designing a new version of this website, so it could look a little different each time you visit over the next few weeks. In the meantime you can check out my clothing brand Severe Nature or some of my work </p>
+    <SectionBridge>I'm currently designing a new version of this website, so it could look a little different each time you visit over the next few weeks. In the meantime you can check out my clothing brand Severe Nature or some of my work </SectionBridge>
     
     <Link to="/page-2/">LinkedIn</Link> 
     <Link to="/page-2/">Github</Link>
@@ -20,11 +20,17 @@ const IndexPage = props => (
   </Layout>
 )
 
-const SectionBridge = styled.text`
-   color: blue;
+const SectionBridge = styled.p`
+   color: rgba(153,153,153,1.0);
     font-size: 40px;
+    font-weight:500;
     margin: 0;
-    line-height: 1.2;
+    line-height: 48px;
+ 
+    @media (max-width: 640px) {
+        font-size: 22px;
+        line-height: 28px;
+    }
 `
 
 const SectionTitle = styled.h3`
