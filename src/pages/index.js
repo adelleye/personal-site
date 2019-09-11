@@ -17,10 +17,11 @@ const IndexPage = props => (
     
 
     <LinkedInLink href="https://www.linkedin.com/in/tobi-adeleye-18ab1b119/">LinkedIn</LinkedInLink> 
-    <Link to="/page-2/">Github</Link>
+    <GithubLink href="https://www.linkedin.com/in/tobi-adeleye-18ab1b119/">Github</GithubLink>
     
   </Layout>
 )
+//
 const MainTextAnimation = keyframes`
    0% {
     opacity: 0;
@@ -103,10 +104,35 @@ const SectionTitle = styled.p`
     @media (max-width: 640px) {
         font-size: 22px;
         line-height: 28px;
+        
     }
 `
 const LinkedInLink = styled.a `
-font-weight: 10px;
+font-size: 20px;
+text-decoration:none;
+font-weight:400;
+margin-left: 140px;
+transition: 1s;
+color:rgba(0,145,255, 1.0);
+display: inline-block;
+
+&:hover { 
+  transform: translateY(-3px);
+   }
+`
+
+const GithubLink = styled.a `
+font-size: 20px;
+text-decoration:none;
+font-weight:400;
+margin-left: 20px;
+transition: 1s;
+color:rgba(0,145,255, 1.0);
+display: inline-block;
+
+&:hover { 
+  transform: translateY(-3px);
+   }
 `
 
 

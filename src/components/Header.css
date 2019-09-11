@@ -2,9 +2,8 @@
     position:fixed;
     z-index: 100;
     width: 100%;
-    
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
     background-color: beige
   }
   #site-title {
