@@ -13,12 +13,10 @@ const IndexPage = props => (
     <SectionDiv>
     <SectionTitle>My name is Tobi, a Toronto based web and user interface designer. </SectionTitle>
     <SectionBridge>I'm currently designing a new version of this website, so it could look a little different each time you visit over the next few weeks. In the meantime you can check out my clothing brand Severe Nature or some of my work </SectionBridge>
-    </SectionDiv>
     
-
     <LinkedInLink href="https://www.linkedin.com/in/tobi-adeleye-18ab1b119/">LinkedIn</LinkedInLink> 
     <GithubLink href="https://www.linkedin.com/in/tobi-adeleye-18ab1b119/">Github</GithubLink>
-    
+    </SectionDiv>
   </Layout>
 )
 //
@@ -42,19 +40,50 @@ margin-right: 140px;
 
 @media (max-width: 860px) {
   max-width: 800px;
-  padding-top: 130px;
+  padding-top: 190px;
   margin-left: 30px;
   margin-right: 30px;
 
     }
 @media (max-width: 640px) {
   max-width: 580px;
-  padding-top: 130px;
+  padding-top: 190px;
   margin-left: 30px;
   margin-right: 30px;
+  
 
     }
+ 
 `
+
+
+const SectionTitle = styled.p`
+    color: rgba(41,42,44,1.0);
+    font-size: 40px;
+    font-weight:500;
+    margin-bottom:30px;
+    line-height: 48px;
+    opacity: 0;
+   animation: ${MainTextAnimation};
+  animation-duration: 3s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+    @media (max-width: 860px) {
+      font-size: 34px;
+        line-height: 41px;
+        margin-bottom:25px;
+
+    }
+ 
+    @media (max-width: 640px) {
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom:20px;
+    }
+`
+
 
 const SectionBridge = styled.p`
    color: rgba(153,153,153,1.0);
@@ -71,68 +100,77 @@ const SectionBridge = styled.p`
 
 
     @media (max-width: 860px) {
-      font-size: 28px;
-        line-height: 34px;
+      font-size: 34px;
+        line-height: 41px;
 
     }
  
     @media (max-width: 640px) {
-        font-size: 22px;
-        line-height: 28px;
-    }
-`
-
-const SectionTitle = styled.p`
-    color: rgba(41,42,44,1.0);
-    font-size: 40px;
-    font-weight:500;
-    margin-bottom:30px;
-    line-height: 48px;
-    opacity: 0;
-   animation: ${MainTextAnimation};
-  animation-duration: 3s;
-  animation-delay: 0.1s;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
-
-    @media (max-width: 860px) {
       font-size: 28px;
         line-height: 34px;
-
-    }
- 
-    @media (max-width: 640px) {
-        font-size: 22px;
-        line-height: 28px;
-        
     }
 `
+
+
 const LinkedInLink = styled.a `
 font-size: 20px;
 text-decoration:none;
-font-weight:400;
-margin-left: 140px;
+font-weight:500;
+margin-top:40px;
+margin-left: 0px;
 transition: 1s;
-color:rgba(0,145,255, 1.0);
+
 display: inline-block;
+color:rgba(121,197,255, 1.0);
 
 &:hover { 
+  color:rgba(0,145,255, 1.0);
   transform: translateY(-3px);
-   }
+}
+
+  @media (max-width: 860px) {
+        font-size: 17px;
+        line-height: 28px;
+        margin-top:30px;
+    }
+ 
+    @media (max-width: 640px) {
+        font-size: 15px;
+        line-height: 28px;
+        margin-top:30px;
+    }
+
+   
 `
 
 const GithubLink = styled.a `
 font-size: 20px;
 text-decoration:none;
-font-weight:400;
+font-weight:500;
+margin-top:40px;
 margin-left: 20px;
 transition: 1s;
-color:rgba(0,145,255, 1.0);
+color:rgba(121,197,255, 1.0);
 display: inline-block;
 
 &:hover { 
+  color:rgba(0,145,255, 1.0);
   transform: translateY(-3px);
    }
+   @media (max-width: 860px) {
+        font-size: 17px;
+        line-height: 28px;
+        margin-top:30px;
+    }
+ 
+    @media (max-width: 640px) {
+        font-size: 15px;
+        line-height: 28px;
+        margin-top:30px;
+    }
+
+
+
 `
 
 

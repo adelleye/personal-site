@@ -12,8 +12,8 @@ class Header extends React.Component {
         <p>Tobi Adeleye</p>
         </div>
         <div className="HeaderGroup">
-          <Link to="/resume">Resume</Link>
-          <Link to="/email">Email</Link>
+          <Link to="/resume">RESUME</Link>
+          <Link to="/email">EMAIL</Link>
     </div> 
     
   </div> 
