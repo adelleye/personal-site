@@ -8,12 +8,15 @@ class Header extends React.Component {
     return (
       // Move all content between parentheses to here.
       <div className = "Header" >
-    <div id ="site-title"> <p>Tobi Adeleye</p></div>
-    <div className="HeaderGroup">
+        <div id ="site-title"> 
+        <p>Tobi Adeleye</p>
+        </div>
+        <div className="HeaderGroup">
           <Link to="/resume">Resume</Link>
           <Link to="/email">Email</Link>
-    </div>
-  </div>
+    </div> 
+    
+  </div> 
   
     )
   }

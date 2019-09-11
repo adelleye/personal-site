@@ -14,9 +14,11 @@ const IndexPage = props => (
     <SectionTitle>My name is Tobi, a Toronto based web and user interface designer. </SectionTitle>
     <SectionBridge>I'm currently designing a new version of this website, so it could look a little different each time you visit over the next few weeks. In the meantime you can check out my clothing brand Severe Nature or some of my work </SectionBridge>
     </SectionDiv>
-    <Link to="/page-2/">LinkedIn</Link> 
-    <Link to="/page-2/">Github</Link>
+    
 
+    <LinkedInLink href="https://www.linkedin.com/in/tobi-adeleye-18ab1b119/">LinkedIn</LinkedInLink> 
+    <Link to="/page-2/">Github</Link>
+    
   </Layout>
 )
 const MainTextAnimation = keyframes`
@@ -29,23 +31,24 @@ const MainTextAnimation = keyframes`
     transform: translateY(0px);
   }
 `
+
 const SectionDiv = styled.div`
 max-width: 860px;
 height: 500px;
-margin-top: 190px;
+padding-top: 190px;
 margin-left: 140px;
 margin-right: 140px;
 
 @media (max-width: 860px) {
   max-width: 800px;
-  margin-top: 130px;
+  padding-top: 130px;
   margin-left: 30px;
   margin-right: 30px;
 
     }
 @media (max-width: 640px) {
   max-width: 580px;
-  margin-top: 130px;
+  padding-top: 130px;
   margin-left: 30px;
   margin-right: 30px;
 
@@ -101,6 +104,9 @@ const SectionTitle = styled.p`
         font-size: 22px;
         line-height: 28px;
     }
+`
+const LinkedInLink = styled.a `
+font-weight: 10px;
 `
 
 
