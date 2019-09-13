@@ -15,7 +15,7 @@ const IndexPage = props => (
     <SectionBridge>I'm currently designing a new version of this website, so it could look a little different each time you visit over the next few weeks. In the meantime you can check out my clothing brand Severe Nature or some of my work </SectionBridge>
     
     <LinkedInLink href="https://www.linkedin.com/in/tobi-adeleye-18ab1b119/">LinkedIn</LinkedInLink> 
-    <GithubLink href="https://www.linkedin.com/in/tobi-adeleye-18ab1b119/">Github</GithubLink>
+    <GithubLink href="https://github.com/adelleye">Github</GithubLink>
     </SectionDiv>
   </Layout>
 )
@@ -121,7 +121,7 @@ margin-left: 0px;
 transition: 1s;
 
 display: inline-block;
-color:rgba(121,197,255, 1.0);
+color:rgba(0,145,255, 0.8);
 
 &:hover { 
   color:rgba(0,145,255, 1.0);
@@ -150,7 +150,7 @@ font-weight:500;
 margin-top:40px;
 margin-left: 20px;
 transition: 1s;
-color:rgba(121,197,255, 1.0);
+color:rgba(0,145,255, 0.8);
 display: inline-block;
 
 &:hover { 
