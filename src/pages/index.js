@@ -51,7 +51,7 @@ grid-template-columns: repeat(2,auto);
 const SectionDiv = styled.div`
 max-width: 492px;
 height: 500px;
-padding-top: 190px;
+padding-top: 150px;
 margin-left: 140px;
 margin-right: 30px;
 
@@ -160,7 +160,7 @@ const LinkedInLink = styled.a `
 font-size: 16px;
 text-decoration:none;
 font-weight:400;
-margin-top:40px;
+margin-top:20px;
 margin-left: 0px;
 transition: 1s;
 display: inline-block;
@@ -190,7 +190,7 @@ const GithubLink = styled.a `
 font-size: 16px;
 text-decoration:none;
 font-weight:400;
-margin-top:40px;
+margin-top:10px;
 margin-left: 20px;
 transition: 1s;
 color:rgba(0,0,0, 1.0);
@@ -218,7 +218,7 @@ display: inline-block;
  const RectangularBoxLinks = styled.div`
  max-width: 500px;
 height: 500px;
-padding-top: 190px;
+padding-top: 150px;
 margin-left: 0px;
 margin-right: 140px;
 display:grid;
