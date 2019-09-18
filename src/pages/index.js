@@ -18,6 +18,7 @@ const IndexPage = props => (
 
     <RectangularBoxLinks>
     <ThingsImInterestedIn> Things I'm interested in </ThingsImInterestedIn>
+    <SpotifyPlaylist> Spotify Playlist</SpotifyPlaylist>
     </RectangularBoxLinks>
 
     </FirstPageContainer>
@@ -40,6 +41,9 @@ const MainTextAnimation = keyframes`
 const FirstPageContainer= styled.div`
 display:grid;
 grid-template-columns: repeat(2,auto);
+@media (max-width: 640px) {
+  grid-template-columns: 1fr
+    }
 `
 
 
@@ -82,14 +86,14 @@ const SectionTitle = styled.p`
   animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 
     @media (max-width: 860px) {
-      font-size: 34px;
+      font-size: 20px;
         line-height: 41px;
-        margin-bottom:25px;
+        margin-bottom:20px;
 
     }
  
     @media (max-width: 640px) {
-        font-size: 28px;
+        font-size: 20px;
         line-height: 34px;
         margin-bottom:20px;
     }
@@ -111,14 +115,14 @@ const SectionBridge = styled.p`
 
 
     @media (max-width: 860px) {
-      font-size: 34px;
+      font-size: 16px;
         line-height: 41px;
 
     }
  
     @media (max-width: 640px) {
-      font-size: 28px;
-        line-height: 34px;
+      font-size: 16px;
+        line-height: 24px;
     }
 `
 
@@ -138,7 +142,7 @@ display: inline-block;
   transform: translateY(-3px);
    }
    @media (max-width: 860px) {
-        font-size: 17px;
+        font-size: 16px;
         line-height: 28px;
         margin-top:30px;
     }
@@ -155,7 +159,7 @@ display: inline-block;
 const LinkedInLink = styled.a `
 font-size: 16px;
 text-decoration:none;
-font-weight:500;
+font-weight:400;
 margin-top:40px;
 margin-left: 0px;
 transition: 1s;
@@ -168,7 +172,7 @@ color:rgba(0,0,0, 1.0);
 }
 
   @media (max-width: 860px) {
-        font-size: 17px;
+        font-size: 16px;
         line-height: 28px;
         margin-top:30px;
     }
@@ -217,6 +221,9 @@ height: 500px;
 padding-top: 190px;
 margin-left: 0px;
 margin-right: 140px;
+display:grid;
+grid-template-columns:repeat(2,auto);
+grid-column-gap: 20px;
 
 @media (max-width: 860px) {
   max-width: 430px;
@@ -227,9 +234,9 @@ margin-right: 140px;
     }
 @media (max-width: 640px) {
   max-width: 320px;
-  padding-top: 190px;
-  margin-left: 30px;
-  margin-right: 30px;
+  padding-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
     }
  `
 
@@ -238,9 +245,10 @@ margin-right: 140px;
 const ThingsImInterestedIn = styled.div`
 width: 250px;
 height: 300px;
-margin-left: 50px;
+
 margin-bottom: 50px;
 border-style: solid;
+border-width: 2px;
 transition: 1s;
 display:grid;
 justify-items: center;
@@ -249,7 +257,42 @@ align-items: center;
 &:hover { 
   box-shadow: 5px 5px rgba(0,0,0,0.5);
    }
+
+   @media (max-width: 640px) {
+  
+  padding-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+    }
 `
+
+const SpotifyPlaylist = styled.div`
+width: 250px;
+height: 300px;
+
+margin-bottom: 50px;
+border-style: solid;
+border-width: 2px;
+transition: 1s;
+display:grid;
+justify-items: center;
+align-items: center;
+
+&:hover { 
+  box-shadow: 5px 5px rgba(0,0,0,0.5);
+   }
+
+   @media (max-width: 640px) {
+  
+  padding-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+    }
+`
+
+
+
+
 
 ;
 export default IndexPage
