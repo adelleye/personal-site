@@ -11,9 +11,10 @@ const IndexPage = props => (
     <FirstPageContainer>
     <SectionDiv>
     <SectionTitle> Introduction Note </SectionTitle>
-    <SectionBridge> My name is Tobi, a Toronto based web and user interface designer. I use this site to learn & try new techniques, so it could look a little different each time you visit. In the meantime you can check out my clothing brand <SevereNatureLink href="https://severenature.com" >Severe Nature</SevereNatureLink>. Professional links are below. </SectionBridge>
+    <SectionBridge> My name is Tobi, a Toronto based web and user interface designer. I use this site to learn & try new techniques, so it could look a little different each time you visit. In the meantime you can check out my clothing brand <SevereNatureLink href="https://severenature.com" >Severe Nature</SevereNatureLink>. Professional links are below: </SectionBridge>
     <LinkedInLink href="https://www.linkedin.com/in/tobi-adeleye-18ab1b119/">LinkedIn</LinkedInLink> 
     <GithubLink href="https://github.com/adelleye">Github</GithubLink>
+    <BiograpghyButton>Biography</BiograpghyButton>
     </SectionDiv>
 
     <RectangularBoxLinks>
@@ -73,7 +74,7 @@ margin-right: 30px;
 
 
 const SectionTitle = styled.p`
-    color: rgba(41,42,44,1.0);
+    color: rgba(0,0,0,1.0);
     font-size: 16px;
     font-weight:500;
     margin-bottom:20px;
@@ -85,17 +86,14 @@ const SectionTitle = styled.p`
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 
-    @media (max-width: 860px) {
-      font-size: 20px;
-        line-height: 41px;
-        margin-bottom:20px;
+    @media (max-width: 860px) { 
+        
 
     }
  
     @media (max-width: 640px) {
-        font-size: 20px;
-        line-height: 34px;
-        margin-bottom:20px;
+       
+      
     }
 `
 
@@ -115,14 +113,12 @@ const SectionBridge = styled.p`
 
 
     @media (max-width: 860px) {
-      font-size: 16px;
-        line-height: 41px;
+      
 
     }
  
     @media (max-width: 640px) {
-      font-size: 16px;
-        line-height: 24px;
+      
     }
 `
 
@@ -214,6 +210,10 @@ display: inline-block;
 
 `
 
+const BiograpghyButton = styled.button`
+
+`
+
 //Second Half of First page
  const RectangularBoxLinks = styled.div`
  max-width: 500px;
@@ -256,6 +256,7 @@ align-items: center;
 
 &:hover { 
   box-shadow: 5px 5px rgba(0,0,0,0.5);
+  cursor: pointer;
    }
 
    @media (max-width: 640px) {
@@ -280,6 +281,7 @@ align-items: center;
 
 &:hover { 
   box-shadow: 5px 5px rgba(0,0,0,0.5);
+  cursor: pointer;
    }
 
    @media (max-width: 640px) {

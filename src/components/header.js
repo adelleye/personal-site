@@ -12,8 +12,9 @@ class Header extends React.Component {
         <p>Tobi Adeleye</p>
         </div>
         <div className="HeaderGroup">
-          <Link to="/resume">Resume</Link>
-          <Link to="/email">Email</Link>
+        
+          <a href ="https://www.linkedin.com/in/tobi-adeleye-18ab1b119/" target="_blank">Resume</a>
+          <a href="mailto:tobi@severenature.com?subject=Hi Tobi" >Send E-mail</a>
     </div> 
     
   </div> 
