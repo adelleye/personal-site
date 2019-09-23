@@ -4,9 +4,29 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled, { keyframes } from "styled-components"
 import arrow from "../images/_ionicons_svg_md-arrow-dropright.svg"
+import ReactDOM from 'react-dom';
 
 class IndexPage extends React.Component {
+  handleClick = () => {
+   // window.location.href = 'https://open.spotify.com/playlist/481Yd8XJuS0izrabVgXe75'
+   window.open('https://open.spotify.com/playlist/481Yd8XJuS0izrabVgXe75')
+  }
+
+  showBiography = () => {
+    var x = document.getElementById('myDIV');
+   console.log(x)
+   if (x.style.display === 'block') {
+    x.style.display = 'none';
+} else {
+    x.style.display = 'block';
+}
+  }
+  
+  
+
+
   render() {
+
     return (
   <Layout>
     <SEO title="Home" />
@@ -29,10 +49,10 @@ class IndexPage extends React.Component {
         </ProfessionalLinksContainer>
 
         <BiograpghyButtonContainer>
-          <BiograpghyButton />
+          <BiograpghyButton onClick={this.showBiography} />
           <BiographyLabel>Biography</BiographyLabel>
         </BiograpghyButtonContainer>
-        <Biography>
+        <Biography id="myDIV" >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed
           viverra ipsum nunc aliquet bibendum enim. In massa tempor nec feugiat.
@@ -46,9 +66,9 @@ class IndexPage extends React.Component {
       </SectionDiv>
 
       <RectangularBoxLinks>
-        <ThingsImInterestedIn>Things I'm interested in</ThingsImInterestedIn>
+        <ThingsImInterestedIn  >Things I'm interested in</ThingsImInterestedIn>
 
-        <SpotifyPlaylist> Spotify Playlist</SpotifyPlaylist>
+        <SpotifyPlaylist onClick={this.handleClick}> Spotify Playlist</SpotifyPlaylist>
       </RectangularBoxLinks>
     </FirstPageContainer>
   </Layout>
@@ -60,6 +80,11 @@ class IndexPage extends React.Component {
 export default IndexPage
 //const IndexPage = props => (
 // ADD IMAGE & LINK TO BOXES, POSITION BIOGRAPHY BUTTON ADD Image
+
+
+
+
+
 
 // STYLED CSS
 const MainTextAnimation = keyframes`
@@ -248,7 +273,11 @@ const BiographyLabel = styled.p`
   font-weight: 500;
 `
 
-const Biography = styled.div``
+const Biography = styled.div`
+
+
+
+`
 
 //Second Half of First page
 const RectangularBoxLinks = styled.div`
@@ -274,6 +303,7 @@ const RectangularBoxLinks = styled.div`
     margin-right: auto;
   }
 `
+
 
 const ThingsImInterestedIn = styled.div`
   width: 250px;
