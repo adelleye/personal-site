@@ -4,11 +4,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled, { keyframes } from "styled-components"
 import arrow from "../images/_ionicons_svg_md-arrow-dropright.svg"
-import ReactDOM from 'react-dom';
+import moment from "moment"
 
 class IndexPage extends React.Component {
   handleClick = () => {
-   // window.location.href = 'https://open.spotify.com/playlist/481Yd8XJuS0izrabVgXe75'
    window.open('https://open.spotify.com/playlist/481Yd8XJuS0izrabVgXe75')
   }
 
@@ -21,11 +20,12 @@ class IndexPage extends React.Component {
     x.style.display = 'block';
 }
   }
-  
-  
 
+  
+  
 
   render() {
+  
 
     return (
   <Layout>
@@ -64,12 +64,13 @@ class IndexPage extends React.Component {
           duis
         </Biography>
       </SectionDiv>
-
+      <SecondHalfOfPage>
       <RectangularBoxLinks>
         <ThingsImInterestedIn  >Things I'm interested in</ThingsImInterestedIn>
-
         <SpotifyPlaylist onClick={this.handleClick}> Spotify Playlist</SpotifyPlaylist>
       </RectangularBoxLinks>
+      <Date id = "date">{moment().format('dddd, MMMM Do YYYY, h:mm:ss a')}</Date>
+      </SecondHalfOfPage>
     </FirstPageContainer>
   </Layout>
 
@@ -114,6 +115,10 @@ const SectionDiv = styled.div`
   margin-left: 140px;
   margin-right: 30px;
   background-color: white;
+
+  @media (max-width: 980px) {
+    margin-left: 70px;
+  }
 
   @media (max-width: 860px) {
     max-width: 430px;
@@ -281,11 +286,15 @@ const Biography = styled.div`
 `
 
 //Second Half of First page
+const SecondHalfOfPage = styled.div`
+`
+
+
 const RectangularBoxLinks = styled.div`
   max-width: 500px;
   padding-top: 150px;
-  margin-left: 0px;
-  margin-right: 140px;
+  margin-left: 10px;
+  margin-right: 100px;
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-gap: 30px;
@@ -353,4 +362,5 @@ const SpotifyPlaylist = styled.div`
     margin-right: auto;
   }
 `
-
+const Date = styled.p`
+`
