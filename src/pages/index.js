@@ -109,7 +109,7 @@ const FirstPageContainer = styled.div`
 //First Half of First page
 const SectionDiv = styled.div`
   max-width: 492px;
-  height: 500px;
+  max-height: 100%;
   padding-top: 150px;
   margin-left: 140px;
   margin-right: 30px;
@@ -117,15 +117,15 @@ const SectionDiv = styled.div`
 
   @media (max-width: 860px) {
     max-width: 430px;
-    padding-top: 190px;
+    padding-top: 120px;
     margin-left: 30px;
     margin-right: 30px;
   }
   @media (max-width: 640px) {
     max-width: 320px;
-    padding-top: 190px;
-    margin-left: 30px;
-    margin-right: 30px;
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
   }
 `
 
@@ -148,7 +148,7 @@ const SectionTitle = styled.p`
   @media (max-width: 640px) {
   }
 `
-
+//My name is Tobi..
 const SectionBridge = styled.p`
   color: rgba(0, 0, 0, 1);
   font-size: 16px;
@@ -205,7 +205,6 @@ const ProfessionalLinksContainer = styled.div`
 const LinkedInLink = styled.a`
   text-decoration: underline;
   text-decoration-style: dotted;
- 
   margin-left: 0px;
   transition: 1s;
   display: inline-block;
@@ -245,13 +244,13 @@ const GithubLink = styled.a`
   @media (max-width: 860px) {
     font-size: 17px;
     line-height: 28px;
-    margin-top: 30px;
+    margin-top: 10px;
   }
 
   @media (max-width: 640px) {
     font-size: 15px;
     line-height: 28px;
-    margin-top: 30px;
+    
   }
 `
 //BIOGRAPHY STARTS HERE
@@ -284,23 +283,24 @@ const Biography = styled.div`
 //Second Half of First page
 const RectangularBoxLinks = styled.div`
   max-width: 500px;
-  height: 500px;
   padding-top: 150px;
   margin-left: 0px;
   margin-right: 140px;
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-column-gap: 20px;
+  grid-gap: 30px;
 
   @media (max-width: 860px) {
     max-width: 430px;
-    padding-top: 190px;
+    padding-top: 50px;
     margin-left: 30px;
     margin-right: 30px;
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    
   }
   @media (max-width: 640px) {
     max-width: 320px;
-    padding-top: 0px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -310,7 +310,6 @@ const RectangularBoxLinks = styled.div`
 const ThingsImInterestedIn = styled.div`
   width: 250px;
   height: 300px;
-
   margin-bottom: 50px;
   border-style: solid;
   border-width: 2px;
