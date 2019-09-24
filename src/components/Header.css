@@ -40,12 +40,15 @@
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
-  color: #3f3f3f;
+  color: #000000;
   text-decoration: none;
   margin: 0;
  
   }
 
+  .HeaderGroup a:hover{
+    color: rgba(0, 0, 0, 0.5)
+  }
 
 
   @media (max-width: 860px) {

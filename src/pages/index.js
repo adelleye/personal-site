@@ -133,7 +133,7 @@ const SectionTitle = styled.p`
   color: rgba(0, 0, 0, 1);
   font-size: 16px;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   line-height: 24px;
   opacity: 0;
   animation: ${MainTextAnimation};
@@ -169,12 +169,12 @@ const SectionBridge = styled.p`
   }
 `
 
+
 const SevereNatureLink = styled.a`
   font-size: 16px;
   text-decoration: underline;
   text-decoration-style: dotted;
   font-weight: 400;
-
   transition: 1s;
   color: rgba(0, 0, 0, 1);
   display: inline-block;
@@ -186,25 +186,26 @@ const SevereNatureLink = styled.a`
   @media (max-width: 860px) {
     font-size: 16px;
     line-height: 28px;
-    margin-top: 30px;
   }
 
   @media (max-width: 640px) {
     font-size: 15px;
     line-height: 28px;
-    margin-top: 30px;
+   
   }
 `
 
+// LINKEDIN AND GITHUB LINKS
 const ProfessionalLinksContainer = styled.div`
   font-size: 16px;
   font-weight: 400;
+  margin-top: 12px;
 `
 
 const LinkedInLink = styled.a`
   text-decoration: underline;
   text-decoration-style: dotted;
-  margin-top: 20px;
+ 
   margin-left: 0px;
   transition: 1s;
   display: inline-block;
@@ -218,20 +219,20 @@ const LinkedInLink = styled.a`
   @media (max-width: 860px) {
     font-size: 16px;
     line-height: 28px;
-    margin-top: 30px;
+   
   }
 
   @media (max-width: 640px) {
     font-size: 15px;
-    line-height: 28px;
-    margin-top: 30px;
+    
+    
   }
 `
 
 const GithubLink = styled.a`
   text-decoration: underline;
   text-decoration-style: dotted;
-  margin-top: 10px;
+  
   margin-left: 20px;
   transition: 1s;
   color: rgba(0, 0, 0, 1);
@@ -260,6 +261,7 @@ const BiograpghyButtonContainer = styled.div`
   align-items: center;
   width: 80px;
   margin-left: -10px;
+  margin-top: 20px;
 `
 const BiograpghyButton = styled.button`
   width: 30px;
