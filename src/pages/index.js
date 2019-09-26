@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled, { keyframes } from "styled-components"
 import arrow from "../images/_ionicons_svg_md-arrow-dropright.svg"
+import interestedInImage from "../images/undraw_young_and_happy_hfpe.svg"
 import moment from "moment"
 
 class IndexPage extends React.Component {
@@ -12,14 +13,16 @@ class IndexPage extends React.Component {
   }
 
   showBiography = () => {
+    
     var x = document.getElementById('myDIV');
-   console.log(x)
    if (x.style.display === 'block') {
     x.style.display = 'none';
 } else {
     x.style.display = 'block';
-}
+};
+  
   }
+
 
   
   
@@ -66,10 +69,12 @@ class IndexPage extends React.Component {
       </SectionDiv>
       <SecondHalfOfPage>
       <RectangularBoxLinks>
-        <ThingsImInterestedIn  >Things I'm interested in</ThingsImInterestedIn>
+        <ThingsImInterestedIn> <InterestedInImage />  <p>Things I'm interested in</p></ThingsImInterestedIn>
         <SpotifyPlaylist onClick={this.handleClick}> Spotify Playlist</SpotifyPlaylist>
       </RectangularBoxLinks>
-      <Date id = "date">{moment().format('dddd, MMMM Do YYYY, h:mm:ss a')}</Date>
+      <DateContainer>
+      <Date >{moment().format('dddd, MMMM Do, YYYY.')}</Date>
+      </DateContainer>
       </SecondHalfOfPage>
     </FirstPageContainer>
   </Layout>
@@ -111,7 +116,7 @@ const FirstPageContainer = styled.div`
 const SectionDiv = styled.div`
   max-width: 492px;
   max-height: 100%;
-  padding-top: 150px;
+  padding-top: 130px;
   margin-left: 140px;
   margin-right: 30px;
   background-color: white;
@@ -339,6 +344,13 @@ const ThingsImInterestedIn = styled.div`
   }
 `
 
+const InterestedInImage = styled.div`
+  width: 100px;
+  height:74px;
+  background: url(${interestedInImage});
+  background-size:cover;
+`
+
 const SpotifyPlaylist = styled.div`
   width: 250px;
   height: 300px;
@@ -362,5 +374,34 @@ const SpotifyPlaylist = styled.div`
     margin-right: auto;
   }
 `
+
+const DateContainer = styled.div `
+margin-right: 140px;
+margin-top: 100px;
+
+
+@media (max-width: 980px) {
+    margin-right: 70px;
+  }
+
+  @media (max-width: 860px) {
+    
+    margin-top: 100px;
+    
+    margin-right: 30px;
+  }
+  @media (max-width: 640px) {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+`
+
 const Date = styled.p`
+font-size: 14px;
+text-align: right;
+@media (max-width: 640px) {
+   text-align:center;
+  }
 `
