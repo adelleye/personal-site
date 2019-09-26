@@ -26,7 +26,7 @@
   .HeaderGroup {
     display: grid;
     max-width: 300px;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
     column-gap: 20px;
     align-items: center;
     justify-items: center;

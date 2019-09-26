@@ -1,10 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled, { keyframes } from "styled-components"
 import arrow from "../images/_ionicons_svg_md-arrow-dropright.svg"
 import interestedInImage from "../images/undraw_young_and_happy_hfpe.svg"
+import playlistImage from "../images/playlist.svg"
 import moment from "moment"
 
 class IndexPage extends React.Component {
@@ -49,6 +49,7 @@ class IndexPage extends React.Component {
             LinkedIn
           </LinkedInLink>
           <GithubLink href="https://github.com/adelleye">Github</GithubLink>
+          <DribbleLink href="https://dribbble.com/tobiadeleye">Dribble</DribbleLink>
         </ProfessionalLinksContainer>
 
         <BiograpghyButtonContainer>
@@ -70,7 +71,7 @@ class IndexPage extends React.Component {
       <SecondHalfOfPage>
       <RectangularBoxLinks>
         <ThingsImInterestedIn> <InterestedInImage />  <p>Things I'm interested in</p></ThingsImInterestedIn>
-        <SpotifyPlaylist onClick={this.handleClick}> Spotify Playlist</SpotifyPlaylist>
+        <SpotifyPlaylist onClick={this.handleClick}>  <PlaylistImage /> <p>Spotify Playlist</p></SpotifyPlaylist>
       </RectangularBoxLinks>
       <DateContainer>
       <Date >{moment().format('dddd, MMMM Do, YYYY.')}</Date>
@@ -205,7 +206,7 @@ const SevereNatureLink = styled.a`
   }
 `
 
-// LINKEDIN AND GITHUB LINKS
+//PROFEESIONAL[LINKEDIN AND GITHUB] LINKS
 const ProfessionalLinksContainer = styled.div`
   font-size: 16px;
   font-weight: 400;
@@ -237,11 +238,9 @@ const LinkedInLink = styled.a`
     
   }
 `
-
 const GithubLink = styled.a`
   text-decoration: underline;
   text-decoration-style: dotted;
-  
   margin-left: 20px;
   transition: 1s;
   color: rgba(0, 0, 0, 1);
@@ -252,7 +251,7 @@ const GithubLink = styled.a`
     transform: translateY(-3px);
   }
   @media (max-width: 860px) {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 28px;
     margin-top: 10px;
   }
@@ -260,9 +259,35 @@ const GithubLink = styled.a`
   @media (max-width: 640px) {
     font-size: 15px;
     line-height: 28px;
-    
   }
 `
+
+const DribbleLink = styled.a`
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  margin-left: 20px;
+  transition: 1s;
+  color: rgba(0, 0, 0, 1);
+  display: inline-block;
+
+  &:hover {
+    color: rgba(0, 145, 255, 1);
+    transform: translateY(-3px);
+  }
+  @media (max-width: 860px) {
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 15px;
+    line-height: 28px;
+  }
+`
+
+
+
 //BIOGRAPHY STARTS HERE
 const BiograpghyButtonContainer = styled.div`
   display: grid;
@@ -290,11 +315,11 @@ const Biography = styled.div`
 
 `
 
-//Second Half of First page
+//SECOND HALF OF FIRST PAGE BEGINS HERE
 const SecondHalfOfPage = styled.div`
 `
 
-
+//BOXES BEGINS HERE
 const RectangularBoxLinks = styled.div`
   max-width: 500px;
   padding-top: 150px;
@@ -349,12 +374,13 @@ const InterestedInImage = styled.div`
   height:74px;
   background: url(${interestedInImage});
   background-size:cover;
+  margin-top: auto;
+  
 `
 
 const SpotifyPlaylist = styled.div`
   width: 250px;
   height: 300px;
-
   margin-bottom: 50px;
   border-style: solid;
   border-width: 2px;
@@ -373,6 +399,16 @@ const SpotifyPlaylist = styled.div`
     margin-left: auto;
     margin-right: auto;
   }
+`
+
+
+const PlaylistImage = styled.div`
+  width: 100px;
+  height:74px;
+  background: url(${playlistImage});
+  background-size:cover;
+  margin-top: auto;
+  
 `
 
 const DateContainer = styled.div `
