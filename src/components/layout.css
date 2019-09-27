@@ -13,6 +13,9 @@ body {
   font-weight: 400;
   margin-bottom: 20px;
   line-height: 24px;
+  -moz-transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
   
 }
 /*
