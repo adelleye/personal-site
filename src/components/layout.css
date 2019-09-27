@@ -31,6 +31,9 @@ body {
   -moz-transform:rotate(90deg);
   -webkit-transform:rotate(90deg);
   transform:rotate(90deg);
+  -moz-transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
 }
 .normal {
   -ms-transform: rotate(0deg);
