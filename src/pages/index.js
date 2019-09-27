@@ -9,11 +9,7 @@ import moment from "moment"
 
 class IndexPage extends React.Component {
 
-  //Set initial state
-  constructor(props) {
-    super(props);
-    this.state = {isClicked: false};
-  }
+  
   
   handleClick = () => {
    window.open('https://open.spotify.com/playlist/481Yd8XJuS0izrabVgXe75')
@@ -21,6 +17,12 @@ class IndexPage extends React.Component {
 
   notionClick = () => {
     window.open('https://www.notion.so/Thing-s-I-m-interested-in-7e3ebbc9c5c24042827567775682a3fc')
+  }
+
+  //Set initial state
+  constructor(props) {
+    super(props);
+    this.state = {isClicked: false};
   }
 
   showBiography = () => {
@@ -32,18 +34,17 @@ class IndexPage extends React.Component {
 } else {
     x.style.display = 'block'; 
 };
-console.log(isClicked);
   }
 
   handleButtonClick = () => {
     this.setState(state => ({
-      isClickedOn: !state.isClickedOn
+      isClicked: !state.isClicked
     }));
   }
 
 handlingBothClicks = () => {
   this.handleButtonClick();
-  showBiography()
+  this.showBiography()
 }
 
   
