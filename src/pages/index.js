@@ -8,6 +8,13 @@ import playlistImage from "../images/playlist.svg"
 import moment from "moment"
 
 class IndexPage extends React.Component {
+
+  //Set initial state
+  constructor(props) {
+    super(props);
+    this.state = {isClicked: false};
+  }
+  
   handleClick = () => {
    window.open('https://open.spotify.com/playlist/481Yd8XJuS0izrabVgXe75')
   }
@@ -21,15 +28,18 @@ class IndexPage extends React.Component {
    
    if (x.style.display === 'block') {
     x.style.display = 'none';
+    isClicked = true;
    
 } else {
     x.style.display = 'block'; 
+    isClicked = false;
 };
 
-console.log('this is:', this);
+console.log(isClicked);
   
   }
-  
+
+
   
 
   render() {
