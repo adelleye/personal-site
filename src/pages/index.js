@@ -23,11 +23,10 @@ class IndexPage extends React.Component {
     x.style.display = 'none';
    
 } else {
-    x.style.display = 'block';
-   
+    x.style.display = 'block'; 
 };
 
-console.log(x)
+console.log('this is:', this);
   
   }
   
