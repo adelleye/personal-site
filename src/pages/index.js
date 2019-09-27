@@ -28,17 +28,23 @@ class IndexPage extends React.Component {
    
    if (x.style.display === 'block') {
     x.style.display = 'none';
-    isClicked = true;
    
 } else {
     x.style.display = 'block'; 
-    isClicked = false;
 };
-
 console.log(isClicked);
-  
   }
 
+  handleButtonClick = () => {
+    this.setState(state => ({
+      isClickedOn: !state.isClickedOn
+    }));
+  }
+
+handlingBothClicks = () => {
+  this.handleButtonClick();
+  showBiography()
+}
 
   
 
@@ -68,7 +74,7 @@ console.log(isClicked);
         </ProfessionalLinksContainer>
 
         <BiograpghyButtonContainer>
-          <BiograpghyButton onClick={this.showBiography} className="rotate" />
+          <BiograpghyButton onClick={this.handlingBothClicks} className={this.state.isClicked? "rotate" : "normal"} />
           <BiographyLabel>Biography</BiographyLabel>
         </BiograpghyButtonContainer>
         <Biography id="myDIV" >

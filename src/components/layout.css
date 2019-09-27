@@ -15,7 +15,7 @@ body {
   line-height: 24px;
   
 }
-
+/*
 .rotate {
   -moz-transition: all .5s linear;
   -webkit-transition: all .5s linear;
@@ -25,5 +25,15 @@ body {
   -moz-transform:rotate(90deg);
   -webkit-transform:rotate(90deg);
   transform:rotate(90deg);
-}
+}*/
 
+.rotate{
+  -moz-transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  transform:rotate(90deg);
+}
+.normal {
+  -ms-transform: rotate(0deg);
+   -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
