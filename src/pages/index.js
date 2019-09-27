@@ -12,6 +12,10 @@ class IndexPage extends React.Component {
    window.open('https://open.spotify.com/playlist/481Yd8XJuS0izrabVgXe75')
   }
 
+  notionClick = () => {
+    window.open('https://www.notion.so/Thing-s-I-m-interested-in-7e3ebbc9c5c24042827567775682a3fc')
+  }
+
   showBiography = () => {
     var x = document.getElementById('myDIV');
    
@@ -72,7 +76,7 @@ console.log(x)
       </SectionDiv>
       <SecondHalfOfPage>
       <RectangularBoxLinks>
-        <ThingsImInterestedIn> <InterestedInImage />  <p>Things I'm interested in</p></ThingsImInterestedIn>
+        <ThingsImInterestedIn onClick={this.notionClick}> <InterestedInImage />  <p>Things I'm interested in</p></ThingsImInterestedIn>
         <SpotifyPlaylist onClick={this.handleClick}>  <PlaylistImage /> <p>Spotify Playlist</p></SpotifyPlaylist>
       </RectangularBoxLinks>
       <DateContainer>
