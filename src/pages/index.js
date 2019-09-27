@@ -13,17 +13,19 @@ class IndexPage extends React.Component {
   }
 
   showBiography = () => {
-    
     var x = document.getElementById('myDIV');
+   
    if (x.style.display === 'block') {
     x.style.display = 'none';
+   
 } else {
     x.style.display = 'block';
+   
 };
+
+console.log(x)
   
   }
-
-
   
   
 
@@ -49,11 +51,11 @@ class IndexPage extends React.Component {
             LinkedIn
           </LinkedInLink>
           <GithubLink href="https://github.com/adelleye">Github</GithubLink>
-          <DribbleLink href="https://dribbble.com/tobiadeleye">Dribble</DribbleLink>
+          <DribbleLink href="https://dribbble.com/tobiadeleye">Dribbble</DribbleLink>
         </ProfessionalLinksContainer>
 
         <BiograpghyButtonContainer>
-          <BiograpghyButton onClick={this.showBiography} />
+          <BiograpghyButton onClick={this.showBiography} className="rotate" />
           <BiographyLabel>Biography</BiographyLabel>
         </BiograpghyButtonContainer>
         <Biography id="myDIV" >
