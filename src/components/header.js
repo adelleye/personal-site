@@ -13,7 +13,7 @@ class Header extends React.Component {
         </div>
         <div className="HeaderGroup">
         
-          <a href ="https://www.linkedin.com/in/tobi-adeleye-18ab1b119/" target="_blank">Resume</a>
+          <a href ="https://www.dropbox.com/s/744tsv9r6g3oxoq/Resume.pdf?dl=0" target="_blank">Resume</a>
           <a href="mailto:tobi@severenature.com?subject=Hi Tobi" >Send E-mail</a>
           <a href="https://github.com/adelleye/personal-site" target="_blank" >View Source</a>
     </div> 
