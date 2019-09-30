@@ -76,10 +76,10 @@
     display: none;
     margin-top: 120px;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     min-width:120px;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.15);
     align-items: center;
     justify-items: center;
     z-index: 1;
@@ -95,7 +95,8 @@
   
   .dropdown a:hover {background-color: #ddd;}
   .dropbtn:focus {
-    outline: none
+    outline: none;
+    opacity:0.3;
   }
   
   .show {display: grid;}
