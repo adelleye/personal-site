@@ -79,21 +79,15 @@ handlingBothClicks = () => {
           <BiographyLabel>Biography</BiographyLabel>
         </BiograpghyButtonContainer>
         <Biography id="myDIV" >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed
-          viverra ipsum nunc aliquet bibendum enim. In massa tempor nec feugiat.
-          Nunc aliquet bibendum enim facilisis gravida. Nisl nunc mi ipsum
-          faucibus vitae aliquet nec ullamcorper. Amet luctus venenatis lectus
-          magna fringilla. Volutpat maecenas volutpat blandit aliquam etiam erat
-          velit scelerisque in. Egestas egestas fringilla phasellus faucibus
-          scelerisque eleifend. Sagittis orci a scelerisque purus semper eget
-          duis
+          Born June 25, The great Tobi Adeleye started his education at Montesorri in Port-Harcourt then to Atlantic Hall in Lagos and finally York University in Toronto.<br/>  At a young age, Tobi always knew he wanted to be an entrepreneur, so he started a record label named Aeroplay, which saw various hit songs emerge from it like "Go below" by Od-Woods and others. Then he moved on to events and threw one of the most significant African parties in Canada called "Imperial" that had over 2000 guests.<br/>  After that, Tobi decided to start a clothing line with his close friend Chris called Severe Nature. <ReadMore href="https://www.notion.so/tobisstuff/Short-Biography-of-Tobi-Adeleye-548d2015e2114260b6bb4172e2713364">
+            Read more
+          </ReadMore> 
         </Biography>
       </SectionDiv>
       <SecondHalfOfPage>
       <RectangularBoxLinks>
-        <ThingsImInterestedIn onClick={this.notionClick}> <InterestedInImage />  <p>Things I'm interested in</p></ThingsImInterestedIn>
-        <SpotifyPlaylist onClick={this.handleClick}>  <PlaylistImage /> <p>Spotify Playlist</p></SpotifyPlaylist>
+        <ThingsImInterestedIn onClick={this.notionClick}> <InterestedInImage />  <p>For Tobi</p></ThingsImInterestedIn>
+        <SpotifyPlaylist onClick={this.handleClick}>  <PlaylistImage /> <p>Greatest Playlist Of All Time</p></SpotifyPlaylist>
       </RectangularBoxLinks>
       <DateContainer>
       <Date >{moment().format('dddd, MMMM Do, YYYY.')}</Date>
@@ -108,7 +102,7 @@ handlingBothClicks = () => {
 
 export default IndexPage
 //const IndexPage = props => (
-// ADD IMAGE & LINK TO BOXES, POSITION BIOGRAPHY BUTTON ADD Image
+// Add harmburger menu for mobile.
 
 
 
@@ -139,7 +133,7 @@ const FirstPageContainer = styled.div`
 const SectionDiv = styled.div`
   max-width: 492px;
   max-height: 100%;
-  padding-top: 130px;
+  padding-top: 110px;
   margin-left: 140px;
   margin-right: 30px;
   background-color: white;
@@ -150,7 +144,7 @@ const SectionDiv = styled.div`
 
   @media (max-width: 860px) {
     max-width: 430px;
-    padding-top: 120px;
+    padding-top: 100px;
     margin-left: 30px;
     margin-right: 30px;
   }
@@ -340,11 +334,39 @@ const BiographyLabel = styled.p`
   font-weight: 500;
 `
 
+const ReadMore = styled.a`
+  font-size: 16px;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  font-weight: 400;
+  transition: 1s;
+  color: rgba(0, 0, 0, 1);
+  display: inline-block;
+
+  &:hover {
+    color: rgba(0, 145, 255, 1);
+    transform: translateY(-3px);
+  }
+  @media (max-width: 860px) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 15px;
+    line-height: 28px;
+   
+  }
+`
 const Biography = styled.div`
 
 
 
 `
+
+
+
+
 
 //SECOND HALF OF FIRST PAGE BEGINS HERE
 const SecondHalfOfPage = styled.div`
