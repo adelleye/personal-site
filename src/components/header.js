@@ -59,13 +59,13 @@ handleClickOutside(event) {
         
           <a href ="https://www.dropbox.com/s/744tsv9r6g3oxoq/Resume.pdf?dl=0" target="_blank">Resume</a>
           <a href="mailto:tobi@severenature.com?subject=Hi Tobi" >Send E-mail</a>
-          <a href="https://github.com/adelleye/personal-site" target="_blank" >View Source</a>
+          <a href="https://github.com/adelleye/personal-site" >View Source</a>
     </div> 
     
 
 
-    <div className="dropdown">
-  <button onClick= {this.myFunction} className="dropbtn"  ref={this.setWrapperRef}></button>
+    <div className="dropdown" ref={this.setWrapperRef}>
+  <button onClick= {this.myFunction} className="dropbtn"  ></button>
   <div id="myDropdown" className="dropdown-content">
   <a href ="https://www.dropbox.com/s/744tsv9r6g3oxoq/Resume.pdf?dl=0" target="_blank">Resume</a>
           <a href="mailto:tobi@severenature.com?subject=Hi Tobi" >Send E-mail</a>
