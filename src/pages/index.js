@@ -67,7 +67,7 @@ handlingBothClicks = () => {
           </SevereNatureLink>. Professional links are below:
         </SectionBridge>
         <ProfessionalLinksContainer>
-          <LinkedInLink href="https://www.linkedin.com/in/tobi-adeleye-18ab1b119/">
+          <LinkedInLink href="https://www.linkedin.com/in/tobi-adeleye/">
             LinkedIn
           </LinkedInLink>
           <GithubLink href="https://github.com/adelleye">Github</GithubLink>
