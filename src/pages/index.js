@@ -324,6 +324,15 @@ const BiograpghyButton = styled.button`
   height: 30px;
   border-style: none;
   background: url(${arrow});
+  &:hover {
+    cursor: pointer;
+    background-color:rgba(0, 0, 0, 0.03) ; 
+  }
+    &:focus {
+      outline: none;
+      border:none;
+    }
+  
 `
 const BiographyLabel = styled.p`
   color: rgba(0, 0, 0, 1);
