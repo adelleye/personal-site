@@ -60,7 +60,8 @@
     font-size: 12px;
     border: none;
     cursor: pointer;
-    background: url("../images/menu.svg")
+    background: url("../images/menu.svg");
+    transition: 1s
   }
   
  
@@ -84,6 +85,8 @@
     align-items: center;
     justify-items: center;
     z-index: 1;
+    transition: 2s
+
   }
   
   .dropdown-content a {
