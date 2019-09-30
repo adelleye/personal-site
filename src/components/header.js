@@ -1,7 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
 import "./Header.css"
-import PropTypes from "prop-types";
 
 
 class Header extends React.Component {
@@ -65,9 +64,9 @@ handleClickOutside(event) {
     
 
 
-    <div class="dropdown">
-  <button onClick= {this.myFunction} class="dropbtn"  ref={this.setWrapperRef}></button>
-  <div id="myDropdown" class="dropdown-content">
+    <div className="dropdown">
+  <button onClick= {this.myFunction} className="dropbtn"  ref={this.setWrapperRef}></button>
+  <div id="myDropdown" className="dropdown-content">
   <a href ="https://www.dropbox.com/s/744tsv9r6g3oxoq/Resume.pdf?dl=0" target="_blank">Resume</a>
           <a href="mailto:tobi@severenature.com?subject=Hi Tobi" >Send E-mail</a>
           <a href="https://github.com/adelleye/personal-site" target="_blank" >View Source</a>
