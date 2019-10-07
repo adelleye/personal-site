@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+
 import React from "react"
 import "./Header.css"
 
@@ -57,7 +57,7 @@ handleClickOutside(event) {
         </div>
         <div className="HeaderGroup">
         
-          <a href ="https://www.dropbox.com/s/744tsv9r6g3oxoq/Resume.pdf?dl=0" target="_blank">Resume</a>
+          <a href ="https://www.dropbox.com/s/9ica2ipj5625g5a/Resume%20Design%201.pdf?dl=0" target="_blank">Resume</a>
           <a href="mailto:tobi@severenature.com?subject=Hi Tobi" >Send E-mail</a>
           <a href="https://github.com/adelleye/personal-site" >View Source</a>
     </div> 
