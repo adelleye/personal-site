@@ -52,6 +52,7 @@ class Header extends React.Component {
           <a
             href="https://www.dropbox.com/home?preview=Resume+Design+1.pdf"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Resume
           </a>
@@ -65,13 +66,18 @@ class Header extends React.Component {
             <a
               href="https://www.dropbox.com/s/744tsv9r6g3oxoq/Resume.pdf?dl=0"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Resume
             </a>
             <a href="mailto:tobi@severenature.com?subject=Hi Tobi">
               Send E-mail
             </a>
-            <a href="https://github.com/adelleye/personal-site" target="_blank">
+            <a
+              href="https://github.com/adelleye/personal-site"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               View Source
             </a>
           </div>

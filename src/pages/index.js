@@ -119,7 +119,7 @@ class IndexPage extends React.Component {
 
 export default IndexPage
 //const IndexPage = props => (
-// Add harmburger menu for mobile.
+// Add hamburger menu for mobile.
 
 // STYLED CSS
 const MainTextAnimation = keyframes`
@@ -232,7 +232,7 @@ const SevereNatureLink = styled.a`
   }
 `
 
-//PROFEESIONAL[LINKEDIN AND GITHUB] LINKS
+// PROFESSIONAL [LINKEDIN AND GITHUB] LINKS
 const ProfessionalLinksContainer = styled.div`
   font-size: 16px;
   font-weight: 400;
